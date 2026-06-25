@@ -1,0 +1,249 @@
+.what-were-building {
+  width: 100%;
+  background: $color-white;
+  padding: 80px 82px 100px;
+
+  @media (max-width: $desktop) {
+    padding: 64px 40px 80px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 48px 24px 64px;
+  }
+
+  &__inner {
+    max-width: $content-max-width;
+    margin: 0 auto;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 64px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #fdf2ef;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-text-secondary;
+  }
+
+  &__headlines {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 61px;
+    line-height: 150%;
+    color: $color-text-primary;
+
+    @media (max-width: $desktop) {
+      font-size: 48px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 36px;
+    }
+
+    @media (max-width: $phone) {
+      font-size: 28px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: $color-text-secondary;
+
+    @media (max-width: $tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__panel {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 56px 32px 32px;
+    background: $color-white;
+    border: 1px solid #f5c4ba;
+    border-radius: 12px;
+
+    @media (max-width: $tablet) {
+      padding: 32px 20px 24px;
+    }
+  }
+
+  &__stages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 42px;
+
+    @media (max-width: $tablet) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      gap: 10px;
+      margin: 0 -20px 32px;
+      padding: 0 20px 8px;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &__stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    background: $color-white;
+    border: 1px solid #f5c4ba;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+
+    svg {
+      display: block;
+      flex-shrink: 0;
+    }
+
+    &:hover:not(&--active) {
+      border-color: #e8705a;
+    }
+
+    &--active {
+      background: #d45a43;
+      border-color: #b04535;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 45px;
+
+    @media (max-width: $desktop) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  &__card {
+    box-sizing: border-box;
+    flex: 1;
+    min-height: 388px;
+    border: 1px solid #e8705a;
+    border-radius: 8px;
+
+    @media (max-width: $tablet) {
+      min-height: auto;
+    }
+  }
+
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    height: 100%;
+    min-height: 388px;
+    padding: 32px;
+
+    @media (max-width: $tablet) {
+      min-height: auto;
+      padding: 24px 20px;
+    }
+  }
+
+  &__card-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__card-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &__card-label {
+    margin: 0 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #e8705a;
+  }
+
+  &__card-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 150%;
+    color: $color-text-primary;
+
+    @media (max-width: $tablet) {
+      font-size: 26px;
+    }
+  }
+
+  &__card-description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: $color-text-primary;
+
+    @media (max-width: $tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 4px 8px;
+    background: #fdf2ef;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    &--live {
+      color: $color-text-primary;
+    }
+
+    &--soon {
+      color: #b0baba;
+    }
+  }
+}

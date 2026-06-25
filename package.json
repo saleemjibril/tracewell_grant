@@ -1,0 +1,41 @@
+{
+  "name": "asmad",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sheet:import-mbox": "node scripts/import-mbox-to-sheets.mjs"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.3.0",
+    "@reduxjs/toolkit": "^2.5.0",
+    "@vercel/analytics": "^1.6.1",
+    "axios": "^1.8.4",
+    "googleapis": "^171.4.0",
+    "gsap": "^3.13.0",
+    "jwt-decode": "^3.1.2",
+    "mailparser": "^3.9.8",
+    "next": "^16.1.6",
+    "puppeteer": "^24.25.0",
+    "react": "^19.2.4",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^19.2.4",
+    "react-hook-form": "^7.54.2",
+    "react-redux": "^9.2.0",
+    "react-toastify": "^11.0.5",
+    "react-tweet": "^3.3.0",
+    "redux": "^5.0.1",
+    "rss-parser": "^3.13.0",
+    "sass": "^1.83.4"
+  },
+  "devDependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

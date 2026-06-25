@@ -1,0 +1,217 @@
+.how-it-works {
+  width: 100%;
+  background: $color-white;
+  padding: 80px 82px 100px;
+
+  @media (max-width: $desktop) {
+    padding: 64px 40px 80px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 48px 24px 64px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    max-width: $content-max-width;
+    margin: 0 auto;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 1056px;
+    text-align: center;
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 0;
+    background: #fdf2ef;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-text-secondary;
+  }
+
+  &__headlines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 61px;
+    line-height: 150%;
+    color: $color-text-primary;
+
+    @media (max-width: $desktop) {
+      font-size: 48px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 36px;
+    }
+
+    @media (max-width: $phone) {
+      font-size: 28px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: $color-text-secondary;
+
+    @media (max-width: $tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+
+    @media (max-width: $desktop) {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: $color-white;
+    border: 1px solid #e9ecec;
+    border-radius: 8px;
+
+    &--seekers {
+      flex: 1 1 626px;
+      max-width: 626px;
+      min-height: 765px;
+
+      @media (max-width: $desktop) {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-height: auto;
+      }
+    }
+
+    &--funders {
+      flex: 1 1 auto;
+      min-height: 501px;
+
+      @media (max-width: $desktop) {
+        min-height: auto;
+      }
+    }
+
+    &--photo {
+      flex: 0 0 239px;
+      min-height: 239px;
+
+      @media (max-width: $tablet) {
+        flex: 0 0 200px;
+        min-height: 200px;
+      }
+    }
+  }
+
+  &__media {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #4d9090;
+
+    img {
+      object-fit: cover;
+    }
+
+    &--seekers {
+      height: 458px;
+      flex-shrink: 0;
+
+      @media (max-width: $tablet) {
+        height: 280px;
+      }
+    }
+
+    &--funders {
+      height: 247px;
+      flex-shrink: 0;
+
+      @media (max-width: $tablet) {
+        height: 220px;
+      }
+    }
+
+    &--collaboration {
+      height: 100%;
+      min-height: 239px;
+
+      @media (max-width: $tablet) {
+        min-height: 200px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  &__card-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 150%;
+    color: $color-text-primary;
+
+    @media (max-width: $tablet) {
+      font-size: 26px;
+    }
+  }
+
+  &__card-description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: $color-text-primary;
+
+    @media (max-width: $tablet) {
+      font-size: 18px;
+    }
+  }
+}
