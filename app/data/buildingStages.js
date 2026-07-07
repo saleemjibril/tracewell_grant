@@ -34,9 +34,9 @@ export const BUILDING_STAGES = [
     },
     funder: {
       label: "Stage 02 — Funder",
-      title: "Manage your review pipeline",
+      title: "Review, score, and shortlist",
       description:
-        "A structured inbox with live pipeline views across every open grant. Assign reviewers, advance applications through stages, and keep applicants updated automatically at every decision point.",
+        "A structured review pipeline with drag-and-drop stages, customisable scoring rubrics, external reviewer accounts, and automated eligibility screening before human review begins.",
       status: "Coming soon",
       statusVariant: "soon",
     },
@@ -47,17 +47,17 @@ export const BUILDING_STAGES = [
     stageNumber: "03",
     seeker: {
       label: "Stage 03 — Seeker",
-      title: "Get matched to the right grants",
+      title: "AI grant matching",
       description:
-        "Tracewell analyses your sector, geography, organisation type, and track record to surface grants you're most likely to qualify for — so you stop wasting time on misaligned applications.",
+        "A personalised grant feed ranked by fit score. Instant eligibility breakdowns showing exactly which criteria you pass. Automatic alerts when a matching grant goes live.",
       status: "Coming soon",
       statusVariant: "soon",
     },
     funder: {
       label: "Stage 03 — Funder",
-      title: "Discover qualified applicants",
+      title: "Due diligence and award",
       description:
-        "Set your mandate, funding size, and eligibility criteria once. Tracewell routes high-fit organisations to your listings and surfaces verified applicants in your discovery feed before applications land.",
+        "KYC verification, automatic sanctions screening, formal notice of award, in-platform negotiation, digital grant agreement — signed by both parties and permanently dated.",
       status: "Coming soon",
       statusVariant: "soon",
     },
@@ -68,17 +68,17 @@ export const BUILDING_STAGES = [
     stageNumber: "04",
     seeker: {
       label: "Stage 04 — Seeker",
-      title: "Deliver against agreed milestones",
+      title: "AI proposal writing tools",
       description:
-        "Log progress against deliverables, upload field evidence as you go, and trigger disbursements when milestones are verified — building a delivery record that follows your organisation across every future grant.",
+        "Section-by-section proposal builder, AI-drafted narratives from your profile, budget builder with market benchmarks, logframe generator, and a pre-submission quality check.",
       status: "Coming soon",
       statusVariant: "soon",
     },
     funder: {
       label: "Stage 04 — Funder",
-      title: "Milestone-based disbursements",
+      title: "Milestone-linked disbursements",
       description:
-        "Define milestone schedules at award stage, verify deliverables before each tranche releases, and maintain a complete audit trail of every payment, evidence file, and sign-off in one place.",
+        "Funds held in escrow per grant. Each tranche releases only on verified milestone completion. Full audit log — every transfer recorded with date, amount, and approval chain.",
       status: "Coming soon",
       statusVariant: "soon",
     },
@@ -97,9 +97,9 @@ export const BUILDING_STAGES = [
     },
     funder: {
       label: "Stage 05 — Funder",
-      title: "Receive consistent reporting",
+      title: "Monitor, review, and manage",
       description:
-        "Define report templates once and receive standardised milestone reports, evidence uploads, and spending data from every grantee — one reporting calendar across your portfolio and one-click audit-ready export.",
+        "Structured report inbox, budget variance view, evidence viewer, M&E dashboard, amendment approvals, and an SLA tracker that flags overdue funder actions — not just grantee delays.",
       status: "Coming soon",
       statusVariant: "soon",
     },
@@ -110,17 +110,17 @@ export const BUILDING_STAGES = [
     stageNumber: "06",
     seeker: {
       label: "Stage 06 — Seeker",
-      title: "A credibility record that compounds",
+      title: "Trust score and delivery profile",
       description:
-        "Every application, award, milestone, and report on Tracewell builds your verified track record. Future funders see a profile backed by delivery data — not just what you claim in a proposal.",
+        "A live credibility score built from delivery rate, evidence quality, and funder ratings. Blockchain-anchored records. A public impact portfolio that compounds with every grant delivered.",
       status: "Coming soon",
       statusVariant: "soon",
     },
     funder: {
       label: "Stage 06 — Funder",
-      title: "Fund with verified confidence",
+      title: "Portfolio intelligence and impact reporting",
       description:
-        "Review an organisation's full grant history, completion rates, and funder references before you commit capital. Trust scores compound with every grant cycle delivered on the platform.",
+        "Aggregated impact across your full portfolio, grantee trust scores, blockchain-anchored disbursement records, sub-grant tracking, and a formatted annual impact report for your board.",
       status: "Coming soon",
       statusVariant: "soon",
     },

@@ -124,22 +124,22 @@
     background: $color-white;
     border: 1px solid #f5c4ba;
     border-radius: 4px;
+    color: #e9ecec;
     cursor: pointer;
     flex-shrink: 0;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease,
+      color 0.2s ease;
 
     svg {
       display: block;
       flex-shrink: 0;
     }
 
-    &:hover:not(&--active) {
-      border-color: #e8705a;
-    }
-
+    &:hover,
     &--active {
       background: #d45a43;
       border-color: #b04535;
+      color: $color-white;
     }
   }
 
@@ -159,8 +159,15 @@
     box-sizing: border-box;
     flex: 1;
     min-height: 388px;
-    border: 1px solid #e8705a;
+    background: $color-white;
+    border: 1px solid #f5c4ba;
     border-radius: 8px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      background: #fdf2ef;
+      border-color: #e8705a;
+    }
 
     @media (max-width: $tablet) {
       min-height: auto;

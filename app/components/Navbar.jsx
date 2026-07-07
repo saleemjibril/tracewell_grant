@@ -1,16 +1,18 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
 const NAV_LINKS = [
-  { label: "Grants", href: "#grants" },
-  { label: "How it works", href: "#how-it-works" },
-  { label: "For funders", href: "#for-funders" },
-  { label: "About us", href: "#about-us" },
+  { label: "Grants", href: "/#grants", activePath: "/grants" },
+  { label: "How it works", href: "/#how-it-works" },
+  { label: "For funders", href: "/#for-funders" },
+  { label: "About us", href: "/#about-us" },
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -60,20 +62,27 @@ export default function Navbar() {
           className={`hero__nav-menu${menuOpen ? " hero__nav-menu--open" : ""}`}
         >
           <nav className="hero__nav-links" aria-label="Main navigation">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="hero__nav-link"
-                onClick={closeMenu}
-              >
-                {link.label}
-              </a>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const isActive = link.activePath === pathname;
+
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className={`hero__nav-link${
+                    isActive ? " hero__nav-link--active" : ""
+                  }`}
+                  aria-current={isActive ? "page" : undefined}
+                  onClick={closeMenu}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
           </nav>
 
           <a
-            href="#waitlist"
+            href="/waitlist"
             className="hero__btn hero__btn--nav"
             onClick={closeMenu}
           >

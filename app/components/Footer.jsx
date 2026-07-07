@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <form className="site-footer__subscribe" action="#waitlist">
+          <form className="site-footer__subscribe" action="/waitlist">
             <label htmlFor="footer-email" className="visually-hidden">
               Email address
             </label>
@@ -53,7 +53,7 @@ export default function Footer() {
               <p className="site-footer__tagline">
                 The Future of Grant Funding Starts With Transparency
               </p>
-              <a href="#waitlist" className="site-footer__waitlist-btn">
+              <a href="/waitlist" className="site-footer__waitlist-btn">
                 Join the waitlist
               </a>
             </div>

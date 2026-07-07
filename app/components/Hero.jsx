@@ -24,7 +24,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <a href="#waitlist" className="hero__btn hero__btn--hero">
+        <a href="/waitlist" className="hero__btn hero__btn--hero">
           Join the waitlist
         </a>
       </div>

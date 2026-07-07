@@ -17,6 +17,10 @@
     gap: 42px;
     max-width: $content-max-width;
     margin: 0 auto;
+
+    @media (max-width: $tablet) {
+      gap: 32px;
+    }
   }
 
   &__top {
@@ -27,6 +31,11 @@
 
     @media (max-width: $desktop) {
       flex-direction: column;
+      gap: 24px;
+    }
+
+    @media (max-width: $tablet) {
+      gap: 32px;
     }
   }
 
@@ -37,12 +46,24 @@
     flex: 1 1 788px;
     max-width: 788px;
     min-width: 0;
+
+    @media (max-width: $desktop) {
+      gap: 32px;
+    }
+
+    @media (max-width: $tablet) {
+      display: contents;
+    }
   }
 
   &__intro {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media (max-width: $tablet) {
+      order: 1;
+    }
   }
 
   &__badge {
@@ -64,6 +85,12 @@
     flex-direction: column;
     gap: 16px;
     width: 100%;
+
+    @media (max-width: $tablet) {
+      .about-us__column > & {
+        order: 3;
+      }
+    }
   }
 
   &__intro &__copy {
@@ -110,6 +137,26 @@
     border-radius: 8px;
     overflow: hidden;
     background: $color-white;
+    transition: box-shadow 0.35s ease;
+
+    &:hover {
+      box-shadow: 0 8px 32px rgba(13, 76, 76, 0.1);
+
+      .about-us__blob--dark {
+        top: 140px;
+        transform: translateX(calc(-50% - 520px));
+      }
+
+      .about-us__blob--light-1 {
+        top: -40px;
+        transform: translateX(calc(-50% - 170px));
+      }
+
+      .about-us__blob--light-2 {
+        top: -8px;
+        transform: translateX(calc(-50% - 360px));
+      }
+    }
 
     @media (max-width: $desktop) {
       flex: none;
@@ -119,6 +166,8 @@
     }
 
     @media (max-width: $tablet) {
+      order: 2;
+      max-width: none;
       height: 240px;
     }
   }
@@ -133,6 +182,7 @@
     position: absolute;
     border-radius: 50%;
     filter: blur(140px);
+    transition: top 0.45s ease, transform 0.45s ease;
 
     &--dark {
       width: 1550px;

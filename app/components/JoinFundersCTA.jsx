@@ -15,7 +15,7 @@ export default function JoinFundersCTA() {
             </p>
           </div>
 
-          <a href="#waitlist" className="join-funders__btn">
+          <a href="/waitlist" className="join-funders__btn">
             Join the founder waitlist
           </a>
         </div>

@@ -18,6 +18,10 @@
     gap: 64px;
     max-width: $content-max-width;
     margin: 0 auto;
+
+    @media (max-width: $tablet) {
+      gap: 48px;
+    }
   }
 
   &__header {

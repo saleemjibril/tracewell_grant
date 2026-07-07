@@ -48,7 +48,7 @@ export default function WhatWereBuilding() {
                   }`}
                   onClick={() => setActiveStage(item.id)}
                 >
-                  <Icon active={isActive} />
+                  <Icon />
                 </button>
               );
             })}
