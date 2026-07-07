@@ -70,6 +70,33 @@
     }
   }
 
+  &__subscribe-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+    width: 686px;
+    max-width: 100%;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+
+  &__subscribe-message {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+
+    &--success {
+      color: $color-dark-teal;
+    }
+
+    &--error {
+      color: #b54a2f;
+    }
+  }
+
   &__subscribe {
     display: flex;
     flex-direction: row;

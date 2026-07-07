@@ -286,6 +286,28 @@
     color: $color-text-secondary;
   }
 
+  &__retry {
+    margin-left: 8px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: $color-dark-teal;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-button-hover;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-orange;
+      outline-offset: 2px;
+    }
+  }
+
   &__show-more {
     display: inline-flex;
     align-items: center;

@@ -1,4 +1,5 @@
 import FooterLogo from "./FooterLogo";
+import NewsletterSubscribe from "./NewsletterSubscribe";
 
 const FOOTER_NAV = [
   [
@@ -26,23 +27,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <form className="site-footer__subscribe" action="/waitlist">
-            <label htmlFor="footer-email" className="visually-hidden">
-              Email address
-            </label>
-            <input
-              id="footer-email"
-              type="email"
-              name="email"
-              placeholder="Enter email"
-              className="site-footer__email-input"
-              autoComplete="email"
-              required
-            />
-            <button type="submit" className="site-footer__subscribe-btn">
-              Subscribe
-            </button>
-          </form>
+          <NewsletterSubscribe />
         </div>
       </div>
 
